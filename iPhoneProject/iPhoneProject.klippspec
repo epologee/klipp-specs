@@ -1,7 +1,7 @@
 # encoding=utf-8
 
 spec 'iPhoneProject' do |s|
-  s.block_actions_under_git = true
+  s.block_actions_under_git = false
   s.post_actions = ['sh post_klipp_create.sh']
   # s.post_actions = ['pod install']
 
