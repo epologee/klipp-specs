@@ -13,13 +13,15 @@
             WLog(@"Undetermined style %li - falling back to XXCLASS_PREFIXXXColorUndetermined", (long) colorStyle);
         case XXCLASS_PREFIXXXColorUndetermined:
             return [UIColor redColor];
+        case XXCLASS_PREFIXXXColorApplicationTint:
+            return [UIColor colorWithRed:0 green:0.4 blue:0.6 alpha:1];
     }
 }
 
 - (NSMutableDictionary *)attributesForTextStyle:(TTTTextStyle)textStyle forControlState:(UIControlState)controlState
 {
     NSMutableDictionary *attributes = [NSMutableDictionary dictionaryWithDictionary:@{
-            TTTAttributeTextColor : [self colorForStyle:XXCLASS_PREFIXXXColorDefault]
+            TTTAttributeTextColor : [self colorForStyle:XXCLASS_PREFIXXXColorApplicationTint]
     }];
 
     switch ((XXCLASS_PREFIXXXTextStyle) textStyle)

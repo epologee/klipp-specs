@@ -5,7 +5,7 @@
 typedef NS_ENUM(TTTColorStyle , XXCLASS_PREFIXXXColorStyle)
 {
     XXCLASS_PREFIXXXColorUndetermined,
-    XXCLASS_PREFIXXXColorDefault,
+    XXCLASS_PREFIXXXColorApplicationTint,
 };
 
 typedef NS_ENUM(TTTTextStyle , XXCLASS_PREFIXXXTextStyle)
