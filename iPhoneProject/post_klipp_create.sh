@@ -13,6 +13,7 @@ chmod +x run_command_line_unit_tests.sh
 
 bundle install
 pod install
-open *.xcw*
 
 rm post_klipp_create.sh
+
+./run_command_line_unit_tests.sh
