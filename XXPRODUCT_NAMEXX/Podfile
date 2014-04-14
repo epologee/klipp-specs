@@ -1,0 +1,22 @@
+platform :ios, '7.0'
+# inhibit_all_warnings!
+
+xcodeproj 'XXPRODUCT_NAMEXX'
+
+target :XXPRODUCT_NAMEXX, :exclusive => true do
+  pod 'EEEOperationCenter'
+  pod 'EEEManualLayout'
+  # pod 'EEEUnifiedAddressBook'
+  pod 'TwelveTwentyToolkit'
+
+  pod 'AFNetworking'
+end
+
+target :XXPRODUCT_NAMEXXTests, :exclusive => true do
+    pod 'Kiwi/XCTest'
+end
+
+target :XXPRODUCT_NAMEXXIntegration, :exclusive => true do
+    pod 'Kiwi/XCTest'
+    pod 'KIF'
+end
