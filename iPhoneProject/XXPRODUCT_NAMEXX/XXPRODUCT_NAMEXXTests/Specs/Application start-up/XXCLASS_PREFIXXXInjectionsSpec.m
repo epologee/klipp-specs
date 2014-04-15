@@ -45,6 +45,7 @@ describe(@"XXCLASS_PREFIXXXInjections", ^{
 
         context(@"with app (production) injections", ^{
             beforeEach(^{
+                [EEEInjector setCurrentInjector:nil force:YES];
                 injector = [XXCLASS_PREFIXXXInjections mapAppInjections];
                 injector.allowImplicitMapping = NO;
             });
