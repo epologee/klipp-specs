@@ -11,12 +11,21 @@ rm post_klipp_create.sh
 # 
 # cd "$wldir"
 
-chmod +x run_command_line_unit_tests.sh
-
-bundle install
-
 cd XXPRODUCT_NAMEXX
+bundle install
+chmod +x run_command_line_unit_tests.sh
 pod install
-sh run_command_line_unit_tests.sh
+./run_command_line_unit_tests.sh
 cd ..
 
+# x=`/usr/bin/osascript <<EOT
+# tell application "Finder"
+#   activate
+#   set myReply to button returned of (display dialog "Open workspace in Xcode?")
+# end tell
+# EOT`
+# if [[ $x = "OK" ]]; then 
+#   open XXPRODUCT_NAMEXX/XXPRODUCT_NAMEXX.xcworkspace
+# fi
+# 
+# echo ""

@@ -15,7 +15,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXHTTPSessionManagerSpec)
 
                 [[sut.requestSerializer should] receive:@selector(requestWithMethod:URLString:parameters:error:)
                                           withArguments:@"POST",
-                                                        @"http://127.0.0.1:3000/controller",
+                                                        @"http://127.0.0.1:3000/controller/action",
                                                         any(),
                                                         any()
                 ];
@@ -23,7 +23,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXHTTPSessionManagerSpec)
                 [[sut should] receive:@selector(dataTaskWithRequest:completionHandler:) andReturn:nil];
 
                 [sut POSTToController:@"controller"
-                               action:nil
+                               action:@"action"
                            parameters:nil
                               success:nil
                               failure:nil];
