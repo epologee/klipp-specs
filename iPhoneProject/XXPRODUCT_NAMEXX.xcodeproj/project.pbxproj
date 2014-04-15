@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950FF35B18FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35118FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */; };
+		950FF35C18FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35218FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m */; };
+		950FF35D18FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35518FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m */; };
+		950FF35E18FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35718FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m */; };
+		950FF35F18FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */; };
+		950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */; };
 		95C02F3318FC533D003FB4B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3218FC533D003FB4B7 /* Foundation.framework */; };
 		95C02F3518FC533D003FB4B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3418FC533D003FB4B7 /* CoreGraphics.framework */; };
 		95C02F3718FC533D003FB4B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3618FC533D003FB4B7 /* UIKit.framework */; };
@@ -36,7 +42,6 @@
 		95D1B22918FC83970059677E /* ApplicationStartupFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1B22618FC83970059677E /* ApplicationStartupFeature.m */; };
 		E420714BA7DB44A7D9DC82CB /* XXCLASS_PREFIXXXFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */; };
 		E42075659A6F5B5E050C3611 /* XXCLASS_PREFIXXXTestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */; };
-		E4207AA63BDC5D8502FFBAA9 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207067B3C0C9B12E802F5F /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		950FF35118FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXFirstViewControllerSpec.m; sourceTree = "<group>"; };
+		950FF35218FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXInjectionsSpec.m; sourceTree = "<group>"; };
+		950FF35518FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXHTTPSessionManagerSpec.m; sourceTree = "<group>"; };
+		950FF35718FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXAsyncOperationSpec.m; sourceTree = "<group>"; };
+		950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXOperationSpec.m; sourceTree = "<group>"; };
+		950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXModelRepositorySpec.m; sourceTree = "<group>"; };
 		95C02F2F18FC533D003FB4B7 /* XXPRODUCT_NAMEXX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXPRODUCT_NAMEXX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C02F3218FC533D003FB4B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95C02F3418FC533D003FB4B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,7 +108,6 @@
 		95D1B22318FC83970059677E /* KWSpec+KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KWSpec+KIFAdditions.h"; sourceTree = "<group>"; };
 		95D1B22418FC83970059677E /* KWSpec+KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KWSpec+KIFAdditions.m"; sourceTree = "<group>"; };
 		95D1B22618FC83970059677E /* ApplicationStartupFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationStartupFeature.m; sourceTree = "<group>"; };
-		E4207067B3C0C9B12E802F5F /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXFirstViewControllerSpec.m; sourceTree = "<group>"; };
 		E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXFirstViewController.m; sourceTree = "<group>"; };
 		E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXTestsAppDelegate.m; sourceTree = "<group>"; };
 		E420779B4181E29ED9895D7E /* XXCLASS_PREFIXXXFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXFirstViewController.h; sourceTree = "<group>"; };
@@ -137,6 +147,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		950FF34F18FD248E00634811 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				950FF35018FD248E00634811 /* Application start-up */,
+				950FF35318FD248E00634811 /* Helpers */,
+				950FF35918FD248E00634811 /* Model repository */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		950FF35018FD248E00634811 /* Application start-up */ = {
+			isa = PBXGroup;
+			children = (
+				950FF35118FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */,
+				950FF35218FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m */,
+			);
+			path = "Application start-up";
+			sourceTree = "<group>";
+		};
+		950FF35318FD248E00634811 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				950FF35418FD248E00634811 /* Communicating with the API */,
+				950FF35618FD248E00634811 /* Operations */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		950FF35418FD248E00634811 /* Communicating with the API */ = {
+			isa = PBXGroup;
+			children = (
+				950FF35518FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m */,
+			);
+			path = "Communicating with the API";
+			sourceTree = "<group>";
+		};
+		950FF35618FD248E00634811 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				950FF35718FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m */,
+				950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		950FF35918FD248E00634811 /* Model repository */ = {
+			isa = PBXGroup;
+			children = (
+				950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */,
+			);
+			path = "Model repository";
+			sourceTree = "<group>";
+		};
 		95C02F2618FC533D003FB4B7 = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +257,7 @@
 		95C02F5118FC533D003FB4B7 /* XXPRODUCT_NAMEXXTests */ = {
 			isa = PBXGroup;
 			children = (
-				E420781D809C0E601D9D5331 /* Specs */,
+				950FF34F18FD248E00634811 /* Specs */,
 				95C02F5218FC533D003FB4B7 /* Supporting Files */,
 			);
 			path = XXPRODUCT_NAMEXXTests;
@@ -329,22 +392,6 @@
 				95D1B22618FC83970059677E /* ApplicationStartupFeature.m */,
 			);
 			path = Specs;
-			sourceTree = "<group>";
-		};
-		E420781D809C0E601D9D5331 /* Specs */ = {
-			isa = PBXGroup;
-			children = (
-				E42079043EF0713B3B7B1996 /* Application start-up */,
-			);
-			path = Specs;
-			sourceTree = "<group>";
-		};
-		E42079043EF0713B3B7B1996 /* Application start-up */ = {
-			isa = PBXGroup;
-			children = (
-				E4207067B3C0C9B12E802F5F /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */,
-			);
-			path = "Application start-up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,8 +571,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950FF35D18FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m in Sources */,
+				950FF35F18FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m in Sources */,
+				950FF35C18FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m in Sources */,
 				E42075659A6F5B5E050C3611 /* XXCLASS_PREFIXXXTestsAppDelegate.m in Sources */,
-				E4207AA63BDC5D8502FFBAA9 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */,
+				950FF35E18FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m in Sources */,
+				950FF35B18FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */,
+				950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
