@@ -40,6 +40,7 @@
 		95C02FA218FC79B8003FB4B7 /* XXCLASS_PREFIXXXModelRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C02FA118FC79B8003FB4B7 /* XXCLASS_PREFIXXXModelRepository.m */; };
 		95D1B22818FC83970059677E /* KWSpec+KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1B22418FC83970059677E /* KWSpec+KIFAdditions.m */; };
 		95D1B22918FC83970059677E /* ApplicationStartupFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1B22618FC83970059677E /* ApplicationStartupFeature.m */; };
+		E420707FD810998FF6692AEA /* XXCLASS_PREFIXXXAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */; };
 		E420714BA7DB44A7D9DC82CB /* XXCLASS_PREFIXXXFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */; };
 		E42075659A6F5B5E050C3611 /* XXCLASS_PREFIXXXTestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */; };
 /* End PBXBuildFile section */
@@ -109,8 +110,10 @@
 		95D1B22418FC83970059677E /* KWSpec+KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KWSpec+KIFAdditions.m"; sourceTree = "<group>"; };
 		95D1B22618FC83970059677E /* ApplicationStartupFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationStartupFeature.m; sourceTree = "<group>"; };
 		E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXFirstViewController.m; sourceTree = "<group>"; };
+		E420719403264BD2626FEF49 /* XXCLASS_PREFIXXXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXAppDelegate.h; sourceTree = "<group>"; };
 		E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXTestsAppDelegate.m; sourceTree = "<group>"; };
 		E420779B4181E29ED9895D7E /* XXCLASS_PREFIXXXFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXFirstViewController.h; sourceTree = "<group>"; };
+		E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXAppDelegateSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 			children = (
 				950FF35118FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */,
 				950FF35218FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m */,
+				E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */,
 			);
 			path = "Application start-up";
 			sourceTree = "<group>";
@@ -312,6 +316,7 @@
 				95C02F7D18FC72B0003FB4B7 /* XXCLASS_PREFIXXXAppDelegate.m */,
 				E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */,
 				E420779B4181E29ED9895D7E /* XXCLASS_PREFIXXXFirstViewController.h */,
+				E420719403264BD2626FEF49 /* XXCLASS_PREFIXXXAppDelegate.h */,
 			);
 			path = "Application start-up";
 			sourceTree = "<group>";
@@ -578,6 +583,7 @@
 				950FF35E18FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m in Sources */,
 				950FF35B18FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */,
 				950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */,
+				E420707FD810998FF6692AEA /* XXCLASS_PREFIXXXAppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
