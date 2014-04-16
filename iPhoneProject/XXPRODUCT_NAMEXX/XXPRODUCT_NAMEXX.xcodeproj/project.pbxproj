@@ -13,6 +13,7 @@
 		950FF35E18FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35718FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m */; };
 		950FF35F18FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */; };
 		950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */; };
+		9544A3F518FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */; };
 		95C02F3318FC533D003FB4B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3218FC533D003FB4B7 /* Foundation.framework */; };
 		95C02F3518FC533D003FB4B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3418FC533D003FB4B7 /* CoreGraphics.framework */; };
 		95C02F3718FC533D003FB4B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3618FC533D003FB4B7 /* UIKit.framework */; };
@@ -70,6 +71,7 @@
 		950FF35718FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXAsyncOperationSpec.m; sourceTree = "<group>"; };
 		950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXOperationSpec.m; sourceTree = "<group>"; };
 		950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXModelRepositorySpec.m; sourceTree = "<group>"; };
+		9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+XXCLASS_PREFIXXXErrorsSpec.m"; sourceTree = "<group>"; };
 		95C02F2F18FC533D003FB4B7 /* XXPRODUCT_NAMEXX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXPRODUCT_NAMEXX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C02F3218FC533D003FB4B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95C02F3418FC533D003FB4B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				950FF35418FD248E00634811 /* Communicating with the API */,
+				9544A3F318FE745D00DDBFF2 /* Error handling */,
 				950FF35618FD248E00634811 /* Operations */,
 			);
 			path = Helpers;
@@ -205,6 +208,14 @@
 				950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */,
 			);
 			path = "Model repository";
+			sourceTree = "<group>";
+		};
+		9544A3F318FE745D00DDBFF2 /* Error handling */ = {
+			isa = PBXGroup;
+			children = (
+				9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */,
+			);
+			path = "Error handling";
 			sourceTree = "<group>";
 		};
 		95C02F2618FC533D003FB4B7 = {
@@ -581,6 +592,7 @@
 			files = (
 				950FF35D18FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m in Sources */,
 				950FF35F18FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m in Sources */,
+				9544A3F518FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m in Sources */,
 				950FF35C18FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m in Sources */,
 				E42075659A6F5B5E050C3611 /* XXCLASS_PREFIXXXTestsAppDelegate.m in Sources */,
 				950FF35E18FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m in Sources */,

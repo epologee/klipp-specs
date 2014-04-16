@@ -7,24 +7,30 @@ NSString *const XXCLASS_PREFIXXXErrorUserInfoJSONKey = @"json";
 
 @implementation NSError (XXCLASS_PREFIXXXErrors)
 
-+ (instancetype)XXCATEGORY_METHOD_PREFIXXX_errorWithClass:(Class)yooClass code:(NSInteger)code
++ (instancetype)XXCATEGORY_METHOD_PREFIXXX_errorWithClass:(Class)XXCATEGORY_METHOD_PREFIXXXClass code:(XXCLASS_PREFIXXXErrorCode)code
 {
-    return [self XXCATEGORY_METHOD_PREFIXXX_errorWithClass:yooClass code:code description:nil];
+    return [self XXCATEGORY_METHOD_PREFIXXX_errorWithClass:XXCATEGORY_METHOD_PREFIXXXClass code:code description:nil];
 }
 
-+ (instancetype)XXCATEGORY_METHOD_PREFIXXX_errorWithClass:(Class)XXCATEGORY_METHOD_PREFIXXXClass code:(NSInteger)code description:(NSString *)description
++ (instancetype)XXCATEGORY_METHOD_PREFIXXX_errorWithClass:(Class)XXCATEGORY_METHOD_PREFIXXXClass code:(XXCLASS_PREFIXXXErrorCode)code description:(NSString *)description
 {
     NSDictionary *userInfo = nil;
 
     if (description)
     {
-        userInfo = @{NSLocalizedDescriptionKey : @"Broker server not available"};
+        userInfo = @{NSLocalizedDescriptionKey : description};
     }
 
     return [self XXCATEGORY_METHOD_PREFIXXX_errorWithClass:XXCATEGORY_METHOD_PREFIXXXClass code:code userInfo:userInfo];
 }
 
-+ (instancetype)XXCATEGORY_METHOD_PREFIXXX_errorWithClass:(Class)XXCATEGORY_METHOD_PREFIXXXClass code:(NSInteger)code userInfo:(NSDictionary *)userInfo
++ (instancetype)XXCATEGORY_METHOD_PREFIXXX_errorWithClass:(Class)XXCATEGORY_METHOD_PREFIXXXClass code:(XXCLASS_PREFIXXXErrorCode)code httpStatusCode:(NSInteger)httpStatusCode
+{
+    NSDictionary *userInfo = @{XXCLASS_PREFIXXXErrorUserInfoStatusCodeKey : @(httpStatusCode)};
+    return [self XXCATEGORY_METHOD_PREFIXXX_errorWithClass:XXCATEGORY_METHOD_PREFIXXXClass code:code userInfo:userInfo];
+}
+
++ (instancetype)XXCATEGORY_METHOD_PREFIXXX_errorWithClass:(Class)XXCATEGORY_METHOD_PREFIXXXClass code:(XXCLASS_PREFIXXXErrorCode)code userInfo:(NSDictionary *)userInfo
 {
     NSError *error = [NSError errorWithDomain:NSStringFromClass(XXCATEGORY_METHOD_PREFIXXXClass)
                                          code:code
@@ -40,7 +46,7 @@ NSString *const XXCLASS_PREFIXXXErrorUserInfoJSONKey = @"json";
 
 - (UIAlertView *)XXCATEGORY_METHOD_PREFIXXX_alertView
 {
-    NSString *message = self.userInfo[NSLocalizedDescriptionKey];
+    NSString *message = self.localizedDescription;
 
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ERROR_TITLE_GENERIC", @"An error has occurred")
                                                         message:message
