@@ -43,6 +43,7 @@
 		E420707FD810998FF6692AEA /* XXCLASS_PREFIXXXAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */; };
 		E420714BA7DB44A7D9DC82CB /* XXCLASS_PREFIXXXFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */; };
 		E42075659A6F5B5E050C3611 /* XXCLASS_PREFIXXXTestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */; };
+		E420775B4CC210C92A885834 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E42076B8CC442E98BABD2B26 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXFirstViewController.m; sourceTree = "<group>"; };
 		E420719403264BD2626FEF49 /* XXCLASS_PREFIXXXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXAppDelegate.h; sourceTree = "<group>"; };
 		E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXTestsAppDelegate.m; sourceTree = "<group>"; };
+		E42076B8CC442E98BABD2B26 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m"; sourceTree = "<group>"; };
 		E420779B4181E29ED9895D7E /* XXCLASS_PREFIXXXFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXFirstViewController.h; sourceTree = "<group>"; };
 		E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXAppDelegateSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				950FF35518FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m */,
+				E42076B8CC442E98BABD2B26 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m */,
 			);
 			path = "Communicating with the API";
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				950FF35B18FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */,
 				950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */,
 				E420707FD810998FF6692AEA /* XXCLASS_PREFIXXXAppDelegateSpec.m in Sources */,
+				E420775B4CC210C92A885834 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
