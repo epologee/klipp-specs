@@ -13,8 +13,8 @@ spec 'iPhoneProject' do |s|
 
   s.token :ORGANIZATION_NAME do |t|
     t.comment = "Organization name"
-    t.validation = /^[A-Z][\p{L}0-9 _.-]*$/
-    t.validation_hint = "Starts with a capital character."
+    t.validation = /^[\p{L}0-9 _.-]+$/
+    t.validation_hint = "No funny business."
   end
 
   s.token :CLASS_PREFIX do |t|
