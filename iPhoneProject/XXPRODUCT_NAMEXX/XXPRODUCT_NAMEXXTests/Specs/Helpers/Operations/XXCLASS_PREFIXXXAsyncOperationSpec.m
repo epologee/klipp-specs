@@ -30,6 +30,14 @@ SPEC_BEGIN(XXCLASS_PREFIXXXAsyncOperationSpec)
                     sut = [[XXCLASS_PREFIXXXAsyncOperation alloc] init];
                     [[sut.modelRepository should] equal:mr];
                 });
+                
+                it(@"injects the current date", ^{
+                    id date = [NSDate mock];
+                    [[injector mapClass:[NSDate class] overwriteExisting:YES] toObject:date];
+
+                    sut = [[XXCLASS_PREFIXXXAsyncOperation alloc] init];
+                    [[sut.now should] equal:date];
+                });
             });
 
             context(@"after alloc/init", ^{
@@ -46,7 +54,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXAsyncOperationSpec)
                     [[sut.rootNavigationController should] beKindOfClass:[UINavigationController class]];
                 });
 
-                it(@"injected the root navigation controller", ^{
+                it(@"injected the shared application", ^{
                     [[sut.sharedApplication should] equal:[UIApplication sharedApplication]];
                 });
             });
