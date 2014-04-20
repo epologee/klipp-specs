@@ -4,4 +4,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (void)prepareInjections;
+- (void)assignRootViewController;
+- (BOOL)makeWindowKeyAndVisible;
+
 @end

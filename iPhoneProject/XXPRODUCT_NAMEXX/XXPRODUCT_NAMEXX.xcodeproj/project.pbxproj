@@ -14,6 +14,7 @@
 		950FF35F18FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */; };
 		950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */; };
 		9544A3F518FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */; };
+		958B00ED1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 958B00EC1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m */; };
 		95C02F3318FC533D003FB4B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3218FC533D003FB4B7 /* Foundation.framework */; };
 		95C02F3518FC533D003FB4B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3418FC533D003FB4B7 /* CoreGraphics.framework */; };
 		95C02F3718FC533D003FB4B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3618FC533D003FB4B7 /* UIKit.framework */; };
@@ -73,6 +74,7 @@
 		950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXOperationSpec.m; sourceTree = "<group>"; };
 		950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXModelRepositorySpec.m; sourceTree = "<group>"; };
 		9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+XXCLASS_PREFIXXXErrorsSpec.m"; sourceTree = "<group>"; };
+		958B00EC1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXIntegrationsAppDelegate.m; sourceTree = "<group>"; };
 		95C02F2F18FC533D003FB4B7 /* XXPRODUCT_NAMEXX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXPRODUCT_NAMEXX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C02F3218FC533D003FB4B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95C02F3418FC533D003FB4B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -311,6 +313,7 @@
 				95C02F6B18FC5461003FB4B7 /* XXPRODUCT_NAMEXXIntegration-Info.plist */,
 				95C02F6C18FC5461003FB4B7 /* InfoPlist.strings */,
 				95C02F7118FC5461003FB4B7 /* XXPRODUCT_NAMEXXIntegration-Prefix.pch */,
+				958B00EC1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -329,12 +332,12 @@
 		95C02F7B18FC72B0003FB4B7 /* Application start-up */ = {
 			isa = PBXGroup;
 			children = (
+				E420719403264BD2626FEF49 /* XXCLASS_PREFIXXXAppDelegate.h */,
+				95C02F7D18FC72B0003FB4B7 /* XXCLASS_PREFIXXXAppDelegate.m */,
 				95C02F7F18FC72CB003FB4B7 /* XXCLASS_PREFIXXXInjections.h */,
 				95C02F8018FC72CB003FB4B7 /* XXCLASS_PREFIXXXInjections.m */,
-				95C02F7D18FC72B0003FB4B7 /* XXCLASS_PREFIXXXAppDelegate.m */,
-				E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */,
 				E420779B4181E29ED9895D7E /* XXCLASS_PREFIXXXFirstViewController.h */,
-				E420719403264BD2626FEF49 /* XXCLASS_PREFIXXXAppDelegate.h */,
+				E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */,
 			);
 			path = "Application start-up";
 			sourceTree = "<group>";
@@ -623,6 +626,7 @@
 			files = (
 				95D1B22918FC83970059677E /* ApplicationStartupFeature.m in Sources */,
 				95D1B22818FC83970059677E /* KWSpec+KIFAdditions.m in Sources */,
+				958B00ED1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
