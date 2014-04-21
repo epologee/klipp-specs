@@ -8,7 +8,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source ${DIR}/env.sh
 
 # Change the report name if you like:
-LCOV_INFO=Coverage.info
+LCOV_INFO=XXPRODUCT_NAMEXX-Coverage.info
 
 XCODECOVERAGE_PATH="${SRCROOT}/XcodeCoverage"
 LCOV_PATH="${XCODECOVERAGE_PATH}/lcov-1.10/bin"
