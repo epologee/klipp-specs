@@ -8,6 +8,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXOperationSpec)
 
         describe(@"XXCLASS_PREFIXXXOperation", ^{
             __block EEEInjector *injector;
+            __block XXCLASS_PREFIXXXOperation *sut;
 
             beforeEach(^{
                 injector = [XXCLASS_PREFIXXXInjections mapTestInjections];
@@ -18,7 +19,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXOperationSpec)
                   id ud = [NSUserDefaults mock];
                   [[injector mapClass:[NSUserDefaults class] overwriteExisting:YES] toObject:ud];
 
-                  XXCLASS_PREFIXXXOperation *sut = [[XXCLASS_PREFIXXXOperation alloc] init];
+                  sut = [[XXCLASS_PREFIXXXOperation alloc] init];
                   [[sut.userDefaults should] equal:ud];
               });
 
@@ -26,12 +27,12 @@ SPEC_BEGIN(XXCLASS_PREFIXXXOperationSpec)
                   id mr = [XXCLASS_PREFIXXXModelRepository mock];
                   [[injector mapClass:[XXCLASS_PREFIXXXModelRepository class] overwriteExisting:YES] toObject:mr];
 
-                  XXCLASS_PREFIXXXOperation *sut = [[XXCLASS_PREFIXXXOperation alloc] init];
+                  sut = [[XXCLASS_PREFIXXXOperation alloc] init];
                   [[sut.modelRepository should] equal:mr];
               });
               
               it(@"injects the current date", ^{
-                  id date = [NSDate mock];
+                  id date = [NSDate nullMock];
                   [[injector mapClass:[NSDate class] overwriteExisting:YES] toObject:date];
 
                   sut = [[XXCLASS_PREFIXXXOperation alloc] init];
@@ -41,22 +42,19 @@ SPEC_BEGIN(XXCLASS_PREFIXXXOperationSpec)
 
             context(@"after alloc/init", ^{
               beforeEach(^{
-                  sut = [[XXCLASS_PREFIXXXOperation alloc] initWithFeedback:nil];
+                  sut = [[XXCLASS_PREFIXXXOperation alloc] init];
               });
 
               it(@"injects a singleton session manager", ^{
-                  XXCLASS_PREFIXXXOperation *sut1 = [[XXCLASS_PREFIXXXOperation alloc] init];
                   XXCLASS_PREFIXXXOperation *sut2 = [[XXCLASS_PREFIXXXOperation alloc] init];
-                  [[sut1.sessionManager should] equal:sut2.sessionManager];
+                  [[sut.sessionManager should] equal:sut2.sessionManager];
               });
 
               it(@"injects the root navigation controller", ^{
-                  XXCLASS_PREFIXXXOperation *sut = [[XXCLASS_PREFIXXXOperation alloc] init];
                   [[sut.rootNavigationController should] equal:[UIApplication sharedApplication].keyWindow.rootViewController];
               });
 
               it(@"injects the shared application", ^{
-                  XXCLASS_PREFIXXXOperation *sut = [[XXCLASS_PREFIXXXOperation alloc] init];
                   [[sut.sharedApplication should] equal:[UIApplication sharedApplication]];
               });
             });

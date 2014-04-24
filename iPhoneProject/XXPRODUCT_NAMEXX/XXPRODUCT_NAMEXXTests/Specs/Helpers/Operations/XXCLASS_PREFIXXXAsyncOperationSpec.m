@@ -32,7 +32,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXAsyncOperationSpec)
                 });
                 
                 it(@"injects the current date", ^{
-                    id date = [NSDate mock];
+                    id date = [NSDate nullMock];
                     [[injector mapClass:[NSDate class] overwriteExisting:YES] toObject:date];
 
                     sut = [[XXCLASS_PREFIXXXAsyncOperation alloc] init];

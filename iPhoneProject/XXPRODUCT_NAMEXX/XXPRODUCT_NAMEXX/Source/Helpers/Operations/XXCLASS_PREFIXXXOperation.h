@@ -11,6 +11,7 @@
 @property(nonatomic, strong) UIApplication *sharedApplication;
 @property(nonatomic, strong) NSUserDefaults *userDefaults;
 @property(nonatomic, strong) XXCLASS_PREFIXXXModelRepository *modelRepository;
+@property(nonatomic, copy) NSDate *now;
 
 @end
 
