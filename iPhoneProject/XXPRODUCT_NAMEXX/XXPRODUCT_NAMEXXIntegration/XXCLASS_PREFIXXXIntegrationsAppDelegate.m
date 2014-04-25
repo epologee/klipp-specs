@@ -6,9 +6,13 @@
 
 @implementation XXCLASS_PREFIXXXIntegrationsAppDelegate
 
-- (void)prepareInjections
+- (EEEInjector *)prepareInjections
 {
-    [XXCLASS_PREFIXXXInjections mapTestInjections];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [window resignKeyWindow];
+    self.window = nil;
+    
+    return [XXCLASS_PREFIXXXInjections mapTestInjections];
 }
 
 @end

@@ -1,7 +1,7 @@
 #import "XXCLASS_PREFIXXXAppDelegate.h"
 #import "XXCLASS_PREFIXXXInjections.h"
 #import "XXCLASS_PREFIXXXTheme.h"
-#import "XXCLASS_PREFIXXXFirstViewController.h"
+#import "XXCLASS_PREFIXXXMainViewController.h"
 
 @implementation XXCLASS_PREFIXXXAppDelegate
 
@@ -20,19 +20,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self prepareInjections];
-    [self assignRootViewController];
+    [self assignRootViewController:nil];
     return [self makeWindowKeyAndVisible];
 }
 
-- (void)prepareInjections
+- (EEEInjector *)prepareInjections
 {
-    [XXCLASS_PREFIXXXInjections mapAppInjections];
+    return [XXCLASS_PREFIXXXInjections mapAppInjections];
 }
 
-- (void)assignRootViewController
+- (void)assignRootViewController:(UIViewController *)rootViewController
 {
     UINavigationController *navigationController = [[UINavigationController alloc] init];
-    navigationController.viewControllers = @[[[XXCLASS_PREFIXXXFirstViewController alloc] init]];
+    navigationController.viewControllers = @[rootViewController ?: [[XXCLASS_PREFIXXXMainViewController alloc] init]];
     self.window.rootViewController = navigationController;
 }
 

@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		950FF35B18FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35118FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */; };
 		950FF35C18FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35218FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m */; };
 		950FF35D18FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35518FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m */; };
 		950FF35E18FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35718FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m */; };
 		950FF35F18FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */; };
 		950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */; };
 		9544A3F518FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */; };
+		958013AF190A6C3000C4F24A /* XXCLASS_PREFIXXXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958013AE190A6C3000C4F24A /* XXCLASS_PREFIXXXMainViewController.m */; };
+		958013B2190A6D6C00C4F24A /* XXCLASS_PREFIXXXMainViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 958013B1190A6D6C00C4F24A /* XXCLASS_PREFIXXXMainViewControllerSpec.m */; };
 		958B00ED1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 958B00EC1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m */; };
 		95C02F3318FC533D003FB4B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3218FC533D003FB4B7 /* Foundation.framework */; };
 		95C02F3518FC533D003FB4B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C02F3418FC533D003FB4B7 /* CoreGraphics.framework */; };
@@ -41,9 +42,8 @@
 		95C02F9E18FC7635003FB4B7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95C02F9C18FC7635003FB4B7 /* Localizable.strings */; };
 		95C02FA218FC79B8003FB4B7 /* XXCLASS_PREFIXXXModelRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C02FA118FC79B8003FB4B7 /* XXCLASS_PREFIXXXModelRepository.m */; };
 		95D1B22818FC83970059677E /* KWSpec+KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1B22418FC83970059677E /* KWSpec+KIFAdditions.m */; };
-		95D1B22918FC83970059677E /* ApplicationStartupFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1B22618FC83970059677E /* ApplicationStartupFeature.m */; };
+		95D1B22918FC83970059677E /* MainInterfaceFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1B22618FC83970059677E /* MainInterfaceFeature.m */; };
 		E420707FD810998FF6692AEA /* XXCLASS_PREFIXXXAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */; };
-		E420714BA7DB44A7D9DC82CB /* XXCLASS_PREFIXXXFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */; };
 		E420755D145F36B979DD5E5B /* UIImage+XXCLASS_PREFIXXXFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = E42079E35FEF913FE0F4E8C6 /* UIImage+XXCLASS_PREFIXXXFixtures.m */; };
 		E42075659A6F5B5E050C3611 /* XXCLASS_PREFIXXXTestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */; };
 		E420775B4CC210C92A885834 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E42076B8CC442E98BABD2B26 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m */; };
@@ -67,13 +67,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		950FF35118FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXFirstViewControllerSpec.m; sourceTree = "<group>"; };
 		950FF35218FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXInjectionsSpec.m; sourceTree = "<group>"; };
 		950FF35518FD248E00634811 /* XXCLASS_PREFIXXXHTTPSessionManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXHTTPSessionManagerSpec.m; sourceTree = "<group>"; };
 		950FF35718FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXAsyncOperationSpec.m; sourceTree = "<group>"; };
 		950FF35818FD248E00634811 /* XXCLASS_PREFIXXXOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXOperationSpec.m; sourceTree = "<group>"; };
 		950FF35A18FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXModelRepositorySpec.m; sourceTree = "<group>"; };
 		9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+XXCLASS_PREFIXXXErrorsSpec.m"; sourceTree = "<group>"; };
+		958013AD190A6C3000C4F24A /* XXCLASS_PREFIXXXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXMainViewController.h; sourceTree = "<group>"; };
+		958013AE190A6C3000C4F24A /* XXCLASS_PREFIXXXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXMainViewController.m; sourceTree = "<group>"; };
+		958013B1190A6D6C00C4F24A /* XXCLASS_PREFIXXXMainViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXMainViewControllerSpec.m; sourceTree = "<group>"; };
 		958B00EC1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXIntegrationsAppDelegate.m; sourceTree = "<group>"; };
 		95C02F2F18FC533D003FB4B7 /* XXPRODUCT_NAMEXX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXPRODUCT_NAMEXX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C02F3218FC533D003FB4B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,13 +116,11 @@
 		95C02FA118FC79B8003FB4B7 /* XXCLASS_PREFIXXXModelRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXModelRepository.m; sourceTree = "<group>"; };
 		95D1B22318FC83970059677E /* KWSpec+KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KWSpec+KIFAdditions.h"; sourceTree = "<group>"; };
 		95D1B22418FC83970059677E /* KWSpec+KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KWSpec+KIFAdditions.m"; sourceTree = "<group>"; };
-		95D1B22618FC83970059677E /* ApplicationStartupFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationStartupFeature.m; sourceTree = "<group>"; };
-		E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXFirstViewController.m; sourceTree = "<group>"; };
+		95D1B22618FC83970059677E /* MainInterfaceFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInterfaceFeature.m; sourceTree = "<group>"; };
 		E420719403264BD2626FEF49 /* XXCLASS_PREFIXXXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXAppDelegate.h; sourceTree = "<group>"; };
 		E42071B890C3390003B4AA59 /* UIImage+XXCLASS_PREFIXXXFixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XXCLASS_PREFIXXXFixtures.h"; sourceTree = "<group>"; };
 		E42075CF02DDB17DE8917C98 /* XXCLASS_PREFIXXXTestsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXTestsAppDelegate.m; sourceTree = "<group>"; };
 		E42076B8CC442E98BABD2B26 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m"; sourceTree = "<group>"; };
-		E420779B4181E29ED9895D7E /* XXCLASS_PREFIXXXFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCLASS_PREFIXXXFirstViewController.h; sourceTree = "<group>"; };
 		E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCLASS_PREFIXXXAppDelegateSpec.m; sourceTree = "<group>"; };
 		E42079E35FEF913FE0F4E8C6 /* UIImage+XXCLASS_PREFIXXXFixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XXCLASS_PREFIXXXFixtures.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				950FF35018FD248E00634811 /* Application start-up */,
+				958013B0190A6D6C00C4F24A /* Main interface */,
 				950FF35318FD248E00634811 /* Helpers */,
 				950FF35918FD248E00634811 /* Model repository */,
 			);
@@ -172,7 +173,6 @@
 		950FF35018FD248E00634811 /* Application start-up */ = {
 			isa = PBXGroup;
 			children = (
-				950FF35118FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m */,
 				950FF35218FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m */,
 				E420793C7AB7F982FF00C666 /* XXCLASS_PREFIXXXAppDelegateSpec.m */,
 			);
@@ -221,6 +221,23 @@
 				9544A3F418FE745D00DDBFF2 /* NSError+XXCLASS_PREFIXXXErrorsSpec.m */,
 			);
 			path = "Error handling";
+			sourceTree = "<group>";
+		};
+		958013AC190A6C3000C4F24A /* Main interface */ = {
+			isa = PBXGroup;
+			children = (
+				958013AD190A6C3000C4F24A /* XXCLASS_PREFIXXXMainViewController.h */,
+				958013AE190A6C3000C4F24A /* XXCLASS_PREFIXXXMainViewController.m */,
+			);
+			path = "Main interface";
+			sourceTree = "<group>";
+		};
+		958013B0190A6D6C00C4F24A /* Main interface */ = {
+			isa = PBXGroup;
+			children = (
+				958013B1190A6D6C00C4F24A /* XXCLASS_PREFIXXXMainViewControllerSpec.m */,
+			);
+			path = "Main interface";
 			sourceTree = "<group>";
 		};
 		95C02F2618FC533D003FB4B7 = {
@@ -322,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				95C02F7B18FC72B0003FB4B7 /* Application start-up */,
+				958013AC190A6C3000C4F24A /* Main interface */,
 				95C02F8218FC738C003FB4B7 /* Design */,
 				95C02F8718FC738C003FB4B7 /* Helpers */,
 				95C02F9F18FC79B8003FB4B7 /* Model repository */,
@@ -336,8 +354,6 @@
 				95C02F7D18FC72B0003FB4B7 /* XXCLASS_PREFIXXXAppDelegate.m */,
 				95C02F7F18FC72CB003FB4B7 /* XXCLASS_PREFIXXXInjections.h */,
 				95C02F8018FC72CB003FB4B7 /* XXCLASS_PREFIXXXInjections.m */,
-				E420779B4181E29ED9895D7E /* XXCLASS_PREFIXXXFirstViewController.h */,
-				E420711B6545B7FA4298F0F9 /* XXCLASS_PREFIXXXFirstViewController.m */,
 			);
 			path = "Application start-up";
 			sourceTree = "<group>";
@@ -415,7 +431,7 @@
 		95D1B22518FC83970059677E /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				95D1B22618FC83970059677E /* ApplicationStartupFeature.m */,
+				95D1B22618FC83970059677E /* MainInterfaceFeature.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -596,9 +612,9 @@
 				95C02F7E18FC72B0003FB4B7 /* XXCLASS_PREFIXXXAppDelegate.m in Sources */,
 				95C02F3F18FC533D003FB4B7 /* main.m in Sources */,
 				95C02F9B18FC7582003FB4B7 /* NSDictionary+XXCLASS_PREFIXXXSafeValues.m in Sources */,
+				958013AF190A6C3000C4F24A /* XXCLASS_PREFIXXXMainViewController.m in Sources */,
 				95C02F9718FC738C003FB4B7 /* XXCLASS_PREFIXXXAsyncOperation.m in Sources */,
 				95C02F9418FC738C003FB4B7 /* XXCLASS_PREFIXXXTheme.m in Sources */,
-				E420714BA7DB44A7D9DC82CB /* XXCLASS_PREFIXXXFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,9 +628,9 @@
 				950FF35C18FD248E00634811 /* XXCLASS_PREFIXXXInjectionsSpec.m in Sources */,
 				E42075659A6F5B5E050C3611 /* XXCLASS_PREFIXXXTestsAppDelegate.m in Sources */,
 				950FF35E18FD248E00634811 /* XXCLASS_PREFIXXXAsyncOperationSpec.m in Sources */,
-				950FF35B18FD248E00634811 /* XXCLASS_PREFIXXXFirstViewControllerSpec.m in Sources */,
 				950FF36018FD248E00634811 /* XXCLASS_PREFIXXXModelRepositorySpec.m in Sources */,
 				E420707FD810998FF6692AEA /* XXCLASS_PREFIXXXAppDelegateSpec.m in Sources */,
+				958013B2190A6D6C00C4F24A /* XXCLASS_PREFIXXXMainViewControllerSpec.m in Sources */,
 				E420775B4CC210C92A885834 /* NSDictionary+XXCLASS_PREFIXXXSafeValuesSpec.m in Sources */,
 				E420755D145F36B979DD5E5B /* UIImage+XXCLASS_PREFIXXXFixtures.m in Sources */,
 			);
@@ -624,7 +640,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95D1B22918FC83970059677E /* ApplicationStartupFeature.m in Sources */,
+				95D1B22918FC83970059677E /* MainInterfaceFeature.m in Sources */,
 				95D1B22818FC83970059677E /* KWSpec+KIFAdditions.m in Sources */,
 				958B00ED1903C3DF00C35573 /* XXCLASS_PREFIXXXIntegrationsAppDelegate.m in Sources */,
 			);
