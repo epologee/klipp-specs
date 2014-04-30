@@ -1,8 +1,8 @@
-#import "XXCLASS_PREFIXXXFirstViewController.h"
+#import "XXCLASS_PREFIXXXMainViewController.h"
 #import "XXCLASS_PREFIXXXTheme.h"
 #import <EEEInjector/EEEInjector.h>
 
-@implementation XXCLASS_PREFIXXXFirstViewController
+@implementation XXCLASS_PREFIXXXMainViewController
 
 - (id)init
 {

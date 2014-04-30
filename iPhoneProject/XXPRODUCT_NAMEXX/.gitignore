@@ -3,3 +3,4 @@ xcuserdata
 .idea
 /Build
 *.xccheckout
+test-reports

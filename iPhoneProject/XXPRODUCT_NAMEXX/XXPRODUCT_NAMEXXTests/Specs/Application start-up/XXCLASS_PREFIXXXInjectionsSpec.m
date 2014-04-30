@@ -11,7 +11,6 @@ describe(@"XXCLASS_PREFIXXXInjections", ^{
         context(@"with test injections", ^{
             beforeEach(^{
                 injector = [XXCLASS_PREFIXXXInjections mapTestInjections];
-                injector.allowImplicitMapping = NO;
             });
 
             it(@"injects the application", ^{
@@ -47,7 +46,6 @@ describe(@"XXCLASS_PREFIXXXInjections", ^{
             beforeEach(^{
                 [EEEInjector setCurrentInjector:nil force:YES];
                 injector = [XXCLASS_PREFIXXXInjections mapAppInjections];
-                injector.allowImplicitMapping = NO;
             });
 
             it(@"injects the user defaults", ^{

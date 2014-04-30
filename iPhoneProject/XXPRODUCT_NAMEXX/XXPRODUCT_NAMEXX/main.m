@@ -10,7 +10,13 @@ int main(int argc, char *argv[]) {
         {
             return UIApplicationMain(argc, argv, nil, @"XXCLASS_PREFIXXXTestsAppDelegate");
         }
-
+        
+        BOOL runningIntegrations = (NSClassFromString(@"XXCLASS_PREFIXXXIntegrationsAppDelegate") != nil);
+        if (runningIntegrations)
+        {
+            return UIApplicationMain(argc, argv, nil, @"XXCLASS_PREFIXXXIntegrationsAppDelegate");
+        }
+        
         return UIApplicationMain(argc, argv, nil, @"XXCLASS_PREFIXXXAppDelegate");
     }
 }
