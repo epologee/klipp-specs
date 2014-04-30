@@ -17,7 +17,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXOperationSpec)
             describe(@"mocked injections", ^{
               it(@"injects the user defaults", ^{
                   id ud = [NSUserDefaults mock];
-                  [[injector mapClass:[NSUserDefaults class] overwriteExisting:YES] toObject:ud];
+                  injector.mapClass([NSUserDefaults class]).toObject(ud);
 
                   sut = [[XXCLASS_PREFIXXXOperation alloc] init];
                   [[sut.userDefaults should] equal:ud];
@@ -25,7 +25,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXOperationSpec)
 
               it(@"injects the model repository", ^{
                   id mr = [XXCLASS_PREFIXXXModelRepository mock];
-                  [[injector mapClass:[XXCLASS_PREFIXXXModelRepository class] overwriteExisting:YES] toObject:mr];
+                  injector.mapClass([XXCLASS_PREFIXXXModelRepository class]).toObject(mr);
 
                   sut = [[XXCLASS_PREFIXXXOperation alloc] init];
                   [[sut.modelRepository should] equal:mr];
@@ -33,7 +33,7 @@ SPEC_BEGIN(XXCLASS_PREFIXXXOperationSpec)
               
               it(@"injects the current date", ^{
                   id date = [NSDate nullMock];
-                  [[injector mapClass:[NSDate class] overwriteExisting:YES] toObject:date];
+                  injector.mapClass([NSDate class]).toObject(date);
 
                   sut = [[XXCLASS_PREFIXXXOperation alloc] init];
                   [[sut.now should] equal:date];
