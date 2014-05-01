@@ -33,7 +33,9 @@ exclude_data()
 {
     LCOV --remove ${LCOV_INFO} "Applications/Xcode.app/*" -d "${OBJ_DIR}" -o ${LCOV_INFO}
     LCOV --remove ${LCOV_INFO} "main.m" -d "${OBJ_DIR}" -o ${LCOV_INFO}
+
     # Remove other patterns here...
+    LCOV --remove ${LCOV_INFO} "XXCLASS_PREFIXXXTheme.m" -d "${OBJ_DIR}" -o ${LCOV_INFO}
 }
 
 generate_report()
