@@ -1,0 +1,14 @@
+xcodeproj 'XXPOD_NAMEXX'
+
+target :XXPOD_NAMEXX, :exclusive => true do
+  pod "XXPOD_NAMEXX", :path => "../"
+end
+
+target :XXPOD_NAMEXXTests, :exclusive => true do
+    pod 'Kiwi/XCTest'
+end
+
+target :XXPOD_NAMEXXIntegration, :exclusive => true do
+    pod 'Kiwi/XCTest'
+    pod 'KIF'
+end
